@@ -41,7 +41,6 @@ import static org.mozilla.universalchardet.prober.statemachine.PkgInt.INDEX_SHIF
 import static org.mozilla.universalchardet.prober.statemachine.PkgInt.SHIFT_MASK_4BITS;
 import static org.mozilla.universalchardet.prober.statemachine.PkgInt.BIT_SHIFT_4BITS;
 import static org.mozilla.universalchardet.prober.statemachine.PkgInt.UNIT_MASK_4BITS;
-import org.mozilla.universalchardet.Constants;
 
 
 public class SJISSMModel extends SMModel
@@ -62,7 +61,7 @@ public class SJISSMModel extends SMModel
                 SJIS_CLASS_FACTOR,
                 new PkgInt(INDEX_SHIFT_4BITS, SHIFT_MASK_4BITS, BIT_SHIFT_4BITS, UNIT_MASK_4BITS, sjisStateTable),
                 sjisCharLenTable,
-                Constants.CHARSET_SHIFT_JIS
+                "Shift_JIS"
                 );
     }
     

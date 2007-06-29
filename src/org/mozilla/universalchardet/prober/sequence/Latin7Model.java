@@ -37,9 +37,6 @@
 
 package org.mozilla.universalchardet.prober.sequence;
 
-import org.mozilla.universalchardet.Constants;
-
-
 public class Latin7Model extends GreekModel
 {
     ////////////////////////////////////////////////////////////////
@@ -47,7 +44,7 @@ public class Latin7Model extends GreekModel
     ////////////////////////////////////////////////////////////////
     public Latin7Model()
     {
-        super(latin7CharToOrderMap, Constants.CHARSET_ISO_8859_7);
+        super(latin7CharToOrderMap, "ISO-8859-7");
     }
     
     

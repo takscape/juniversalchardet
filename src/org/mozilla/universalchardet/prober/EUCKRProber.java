@@ -41,8 +41,6 @@ import org.mozilla.universalchardet.prober.distributionanalysis.EUCKRDistributio
 import org.mozilla.universalchardet.prober.statemachine.CodingStateMachine;
 import org.mozilla.universalchardet.prober.statemachine.EUCKRSMModel;
 import org.mozilla.universalchardet.prober.statemachine.SMModel;
-import org.mozilla.universalchardet.Constants;
-
 
 public class EUCKRProber extends CharsetProber
 {
@@ -74,7 +72,7 @@ public class EUCKRProber extends CharsetProber
     @Override
     public String getCharSetName()
     {
-        return Constants.CHARSET_EUC_KR;
+        return "EUC-KR";
     }
 
     @Override

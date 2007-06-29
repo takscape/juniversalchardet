@@ -9,34 +9,31 @@ that is the encoding detector library of Mozilla.
 The original code of universalchardet is available at
 http://lxr.mozilla.org/seamonkey/source/extensions/universalchardet/
 
-Techniques used by universalchardet are described at
-http://www.mozilla.org/projects/intl/UniversalCharsetDetection.html
-
 
 2. Encodings that can be detected
 
 - Chinese
   - ISO-2022-CN
-  - BIG-5
-  - EUC-TW
+  - Big5
+  - X-EUC-TW
   - GB18030
   - HZ-GB-2312
 
 - Cyrillic
   - ISO-8859-5
   - KOI8-R
-  - WINDOWS-1251
-  - MACCYRILLIC
+  - windows-1251
+  - x-mac-cyrillic
   - IBM866
   - IBM855
 
 - Greek
   - ISO-8859-7
-  - WINDOWS-1253
+  - windows-1253
 
 - Hebrew
   - ISO-8859-8
-  - WINDOWS-1255
+  - windows-1255
 
 - Japanese
   - ISO-2022-JP
@@ -53,9 +50,7 @@ http://www.mozilla.org/projects/intl/UniversalCharsetDetection.html
   - UTF-32BE / UTF-32LE / X-ISO-10646-UCS-4-3412 / X-ISO-10646-UCS-4-2143
 
 - Others
-  - WINDOWS-1252
-
-All supported encodings are listed in org.mozilla.universalchardet.Constants.
+  - ISO-8859-1
 
 
 3. How to use it
@@ -106,18 +101,7 @@ public class TestDetector
 }
 
 
-4. Related Woks
-
-- jchardet  http://jchardet.sourceforge.net/
-
-jchardet is another Java port of the Mozilla's encoding dectection library.
-The main difference between jchardet and juniversalchardet is modules
-they are based on. jchardet is based on the "chardet" module that has
-long existed. juniversalchardet is based on the "universalchardet" module
-that is new and generally provides better accuracy on detection results.
-
-
-5. License
+4. License
 
 The library is subject to the Mozilla Public License Version 1.1.
 Alternatively, the library may be used under the terms of either

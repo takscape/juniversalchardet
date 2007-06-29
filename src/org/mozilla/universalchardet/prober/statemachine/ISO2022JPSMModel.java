@@ -20,7 +20,6 @@
  *
  * Contributor(s):
  *   Kohei TAKETA <k-tak@void.in> (Java port)
- *   Kazutoshi Satoda
  *
  * Alternatively, the contents of this file may be used under the terms of
  * either the GNU General Public License Version 2 or later (the "GPL"), or
@@ -42,7 +41,6 @@ import static org.mozilla.universalchardet.prober.statemachine.PkgInt.INDEX_SHIF
 import static org.mozilla.universalchardet.prober.statemachine.PkgInt.SHIFT_MASK_4BITS;
 import static org.mozilla.universalchardet.prober.statemachine.PkgInt.BIT_SHIFT_4BITS;
 import static org.mozilla.universalchardet.prober.statemachine.PkgInt.UNIT_MASK_4BITS;
-import org.mozilla.universalchardet.Constants;
 
 
 public class ISO2022JPSMModel extends SMModel
@@ -63,7 +61,7 @@ public class ISO2022JPSMModel extends SMModel
                 ISO2022JP_CLASS_FACTOR,
                 new PkgInt(INDEX_SHIFT_4BITS, SHIFT_MASK_4BITS, BIT_SHIFT_4BITS, UNIT_MASK_4BITS, iso2022jpStateTable),
                 iso2022jpCharLenTable,
-                Constants.CHARSET_ISO_2022_JP
+                "ISO-2022-JP"
                 );
     }
     
@@ -119,6 +117,6 @@ public class ISO2022JPSMModel extends SMModel
     };
     
     private static int[] iso2022jpCharLenTable = new int[] {
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        0, 0, 0, 0, 0, 0, 0, 0
     };
 }

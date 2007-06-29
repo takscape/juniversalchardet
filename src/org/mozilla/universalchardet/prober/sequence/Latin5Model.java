@@ -37,9 +37,6 @@
 
 package org.mozilla.universalchardet.prober.sequence;
 
-import org.mozilla.universalchardet.Constants;
-
-
 public class Latin5Model extends CyrillicModel
 {
     ////////////////////////////////////////////////////////////////
@@ -47,7 +44,7 @@ public class Latin5Model extends CyrillicModel
     ////////////////////////////////////////////////////////////////
     public Latin5Model()
     {
-        super(latin5CharToOrderMap, Constants.CHARSET_ISO_8859_5);
+        super(latin5CharToOrderMap, "ISO-8859-5");
     }
     
     

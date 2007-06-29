@@ -42,7 +42,6 @@ import org.mozilla.universalchardet.prober.statemachine.EUCJPSMModel;
 import org.mozilla.universalchardet.prober.statemachine.SMModel;
 import org.mozilla.universalchardet.prober.contextanalysis.EUCJPContextAnalysis;
 import org.mozilla.universalchardet.prober.distributionanalysis.EUCJPDistributionAnalysis;
-import org.mozilla.universalchardet.Constants;
 
 
 public class EUCJPProber extends CharsetProber
@@ -77,7 +76,7 @@ public class EUCJPProber extends CharsetProber
     @Override
     public String getCharSetName()
     {
-        return Constants.CHARSET_EUC_JP;
+        return "EUC-JP";
     }
 
     @Override

@@ -41,8 +41,6 @@ import org.mozilla.universalchardet.prober.distributionanalysis.EUCTWDistributio
 import org.mozilla.universalchardet.prober.statemachine.CodingStateMachine;
 import org.mozilla.universalchardet.prober.statemachine.EUCTWSMModel;
 import org.mozilla.universalchardet.prober.statemachine.SMModel;
-import org.mozilla.universalchardet.Constants;
-
 
 public class EUCTWProber extends CharsetProber
 {
@@ -74,7 +72,7 @@ public class EUCTWProber extends CharsetProber
     @Override
     public String getCharSetName()
     {
-        return Constants.CHARSET_EUC_TW;
+        return "x-euc-tw";
     }
 
     @Override
