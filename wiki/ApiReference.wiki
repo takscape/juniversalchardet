@@ -1,0 +1,28 @@
+#summary API Reference
+
+= API Reference =
+
+== class org.mozilla.universalchardet.UniversalDetector ==
+
+=== public UniversalDetector(CharsetListener listener) ===
+Constructs a detector. `listener` is a listener object that is notified of the detected charset. `listener` can be `null`.
+
+=== public boolean isDone() ===
+Returns whether the detector has detected an charset.
+
+=== public String getDetectedCharset() ===
+Returns the detected charset. If the detector can't determine what encoding is used, returns `null`.
+
+=== public void handleData(final byte[] buf, int offset, int length) ===
+Feeds data to the detector.
+
+=== public void dataEnd() ===
+Notifies the detector that there are no more data to process. This method should be always called when you finished feeding data.
+
+=== public void reset() ===
+Resets the detector. After reset(), the detector can be used for another guess of a charset again.
+
+== class org.mozilla.universalchardet.CharsetListener ==
+
+
+== class org.mozilla.universalchardet.Constants ==
