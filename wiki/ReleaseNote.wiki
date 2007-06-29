@@ -1,0 +1,14 @@
+#summary Release note
+
+= Release Note =
+
+== 1.0.2 ==
+  * Canonicalized charset names which are returned by !UniversalDetector.getDetectedCharset().
+  * org.mozilla.universalchardet.Constatants now has all names of charsets which juniversalchardet can recognize. They can be compared to the result of !UniversalDetector.getDetectedCharset().
+
+== 1.0.1 ==
+  * Fixed array bound violation in ISO2022JPSMModel. Thanks, Kazutoshi Satoda.
+
+== 1.0 ==
+  * Initial release.
+
