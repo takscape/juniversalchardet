@@ -20,7 +20,7 @@ Feeds data to the detector.
 Notifies the detector that there are no more data to process. This method should be always called before you call getDetectedCharset().
 
 === public void reset() ===
-Resets the detector. After reset(), the detector can be used for another guess of a charset again.
+Resets the detector. After reset(), you can reuse the detector to process another document.
 
 == class org.mozilla.universalchardet.CharsetListener ==
 
