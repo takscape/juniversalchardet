@@ -8,7 +8,7 @@
 Constructs a detector. `listener` is a listener object that is notified of the detected charset. `listener` can be `null`.
 
 === public boolean isDone() ===
-Returns whether the detector has detected an charset.
+Returns whether the detector has detected a charset.
 
 === public String getDetectedCharset() ===
 Returns the detected charset. If the detector can't determine what encoding is used, returns `null`.
@@ -17,7 +17,7 @@ Returns the detected charset. If the detector can't determine what encoding is u
 Feeds data to the detector.
 
 === public void dataEnd() ===
-Notifies the detector that there are no more data to process. This method should be always called when you finished feeding data.
+Notifies the detector that there are no more data to process. This method should be always called before you call getDetectedCharset().
 
 === public void reset() ===
 Resets the detector. After reset(), the detector can be used for another guess of a charset again.
