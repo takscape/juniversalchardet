@@ -22,7 +22,38 @@ Notifies the detector that there are no more data to process. This method should
 === public void reset() ===
 Resets the detector. After reset(), you can reuse the detector to process another document.
 
-== class org.mozilla.universalchardet.CharsetListener ==
-
 
 == class org.mozilla.universalchardet.Constants ==
+All charset names that juniversalchardet can detect are defined in this class.
+
+* Charsets supported by Java
+  * public static final String CHARSET_ISO_2022_JP
+  * public static final String CHARSET_ISO_2022_CN
+  * public static final String CHARSET_ISO_2022_KR
+  * public static final String CHARSET_ISO_8859_5
+  * public static final String CHARSET_ISO_8859_7
+  * public static final String CHARSET_ISO_8859_8
+  * public static final String CHARSET_BIG5
+  * public static final String CHARSET_GB18030
+  * public static final String CHARSET_EUC_JP
+  * public static final String CHARSET_EUC_KR
+  * public static final String CHARSET_EUC_TW
+  * public static final String CHARSET_SHIFT_JIS
+  * public static final String CHARSET_IBM855
+  * public static final String CHARSET_IBM866
+  * public static final String CHARSET_KOI8_R
+  * public static final String CHARSET_MACCYRILLIC
+  * public static final String CHARSET_WINDOWS_1251
+  * public static final String CHARSET_WINDOWS_1252
+  * public static final String CHARSET_WINDOWS_1253
+  * public static final String CHARSET_WINDOWS_1255
+  * public static final String CHARSET_UTF_8
+  * public static final String CHARSET_UTF_16BE
+  * public static final String CHARSET_UTF_16LE
+  * public static final String CHARSET_UTF_32BE
+  * public static final String CHARSET_UTF_32LE
+
+* Charsets NOT supported by Java
+  * public static final String CHARSET_HZ_GB_2312
+  * public static final String CHARSET_X_ISO_10646_UCS_4_3412
+  * public static final String CHARSET_X_ISO_10646_UCS_4_2143
