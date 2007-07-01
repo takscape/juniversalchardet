@@ -11,7 +11,7 @@ Constructs a detector. `listener` is a listener object that is notified of the d
 Returns whether the detector has detected a charset.
 
 === public String getDetectedCharset() ===
-Returns the detected charset. If the detector can't determine what encoding is used, returns `null`.
+If the detector has detected an encoding, returns one of the charset names defined in org.mozilla.universalchardet.Constants. If the detector has not detected any encoding yet, returns `null`.
 
 === public void handleData(final byte[] buf, int offset, int length) ===
 Feeds data to the detector.
