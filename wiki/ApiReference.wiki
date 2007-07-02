@@ -1,4 +1,5 @@
 #summary API Reference
+#labels Featured
 
 = API Reference =
 
